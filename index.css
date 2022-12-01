@@ -1,0 +1,89 @@
+.flipkart-heading {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+#home-heaing {
+  color: white;
+  font-weight: 450;
+}
+#oders-heading {
+  color: white;
+  font-weight: 450;
+}
+#cart-heading {
+  color: white;
+  font-weight: 450;
+}
+.more-heading {
+  color: white !important;
+  font-weight: 450;
+}
+input {
+  width: 500px !important;
+}
+.nav-below-img {
+  height: 65px;
+}
+.electronics-img {
+  width: 60px;
+}
+.curousel-container {
+  height: 500px !important;
+}
+.curosel-laptop-img {
+  height: 500px !important;
+}
+.img-card {
+  height: 250px;
+  width: 180px;
+}
+.price {
+  font-size: 23px;
+  font-weight: 600;
+}
+.card-mobile-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.final-mouse-img {
+  height: 200px;
+  width: 170px;
+}
+.top-selection-anchor {
+  color: rgb(16, 130, 16);
+  font-weight: 500;
+}
+.flipkard-details-headings {
+  color: gray;
+  font-weight: 650;
+  font-size: 19px;
+}
+.flipkart-details-para {
+  color: grey;
+  font-size: 11px;
+}
+.last-part {
+  background-color: rgba(0, 0, 0, 0.996);
+}
+.like-about-heading {
+  color: grey;
+  font-weight: 500;
+}
+.contact-us-details {
+  color: white;
+  font-weight: 350;
+}
+.border-prop {
+  border-right: 2px solid;
+  margin-right: 40px;
+}
+.mail-us-heading-spacing {
+  line-height: 1px;
+  color: white;
+  font-size: 12px;
+  font-weight: 45px;
+}
+.span-heading {
+  color: #0000ff;
+}

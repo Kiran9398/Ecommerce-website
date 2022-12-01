@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Flipkart</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand flipkart-heading" href="#">Flipkart</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="home-heaing"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="oders-heading" href="#">Orders</a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="cart-heading"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Cart</a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle more-heading"
+              href="#"
+              id="navbarDropdown more-heading"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Notifications</a>
+              <a class="dropdown-item" href="#">24x7 Customer Care</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="#">Download App</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search products, mobiles, Tv's etc..."
+            aria-label="Search"
+          />
+          <button class="btn bg-white my-2 my-sm-0 mr-2" type="submit">
+            Search
+          </button>
+          <button class="btn bg-white my-2 my-sm-0" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
+    <div
+      class="d-flex flex-row justify-content-center mt-3 ml-3 mr-3 pt-2 pb-2 shadow"
+    >
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\image1.jpg"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Mobiles</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\fashion-img.webp"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Fashion</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-grocery-img.webp"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Grocery</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-eletronics-img.jpg"
+          class="nav-below-img electronics-img"
+        />
+        <br />
+        <a href="">Electronics</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-appliences-img.jpg"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Appliences</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-furniture-img.webp"
+          class="nav-below-img electronics-img"
+        />
+        <br />
+        <a href="">Home</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-aeroplane-img.avif"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Travel</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkard-accessories-img.webp"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Accessories</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-jewellery-img.jpg"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Jewellery</a>
+      </div>
+
+      <div class="mr-5 text-center">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\flipkart-toys-img.jpg"
+          class="nav-below-img"
+        />
+        <br />
+        <a href="">Toys</a>
+      </div>
+    </div>
+
+    <div class="curousel-container mt-2 shadow">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="D:\Mentor Projects\E_Commerce_static\flipkart-curosal-img.avif"
+              class="d-block w-100 curousel-container"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Realme 10pro plus</h5>
+              <p>Coming Soon!</p>
+              <p>Price: Rs __999/-</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="D:\Mentor Projects\E_Commerce_static\flipakart-curosel-laptop-img.avif"
+              class="d-block w-100 curosel-laptop-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HP core I5 12Th Gen</h5>
+              <p class="">Price: Rs 55000/-</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="D:\Mentor Projects\E_Commerce_static\curosal-tv-img.avif"
+              class="d-block w-100 curosel-laptop-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Canon Hd 2250</h5>
+              <p>Price: Rs 29990/-</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center ml-5 mt-3 text-center">
+      <div class="mr-5 ml-5 shadow pt-4 pb-0 pl-4 pr-4 mb-4">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\img-m-1.webp"
+          class="img-card"
+        />
+        <p class="mt-2 card-mobile-heading">Redmi note 10pro</p>
+        <p class="price">Rs 17999/-</p>
+      </div>
+
+      <div class="mr-5 shadow pt-4 pb-0 pl-4 pr-4 mb-4">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\img-m-2.jpg"
+          class="img-card"
+        />
+        <p class="mt-2 card-mobile-heading">Oneplus 2T</p>
+        <p class="price">Rs 27999/-</p>
+      </div>
+
+      <div class="mr-5 shadow pt-4 pb-0 pl-4 pr-4 mb-4">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\img-m-3.jpg"
+          class="img-card"
+        />
+        <p class="mt-2 card-mobile-heading">Oneplus 10T</p>
+        <p class="price">Rs 54999/-</p>
+      </div>
+
+      <div class="mr-5 shadow pt-4 pb-0 pl-4 pr-4 mb-4">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\img-m-4.jpg"
+          class="img-card"
+        />
+        <p class="mt-2 card-mobile-heading">Redmi K50i 5G</p>
+        <p class="price">Rs 21999/-</p>
+      </div>
+      <div class="mr-5 shadow pt-4 pb-0 pl-4 pr-4 mb-4">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\img-m-5.jpg"
+          class="img-card"
+        />
+        <p class="mt-2 card-mobile-heading">IQ Z6 lite 5G</p>
+        <p class="price">Rs 16999/-</p>
+      </div>
+
+      <div class="mr-5 shadow pt-4 pb-0 pl-4 pr-4 mb-4">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\IMG-M-6.jpg"
+          class="img-card"
+        />
+        <p class="mt-2 card-mobile-heading">Samsung M32</p>
+        <p class="price">Rs 10999/-</p>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center text-center">
+      <div class="card mr-5" style="width: 18rem">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\big-card-img-1.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Redmi Pad 15.6 I5 12th</p>
+          <p>45999/-</p>
+        </div>
+      </div>
+      <div class="card mr-5" style="width: 18rem">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\big-card-img-2.webp"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Macbook air 14inch M1</p>
+          <p>95999/-</p>
+        </div>
+      </div>
+      <div class="card mr-5" style="width: 18rem">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\big-card-img-3.avif"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Dell I3 11th Gen 15.6inch Laptop</p>
+          <p>35999/-</p>
+        </div>
+      </div>
+      <div class="card mr-5" style="width: 18rem">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\big-card-img-4.avif"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Dell I5 11th Gen 3200 15inch</p>
+          <p>59000/-</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row shadow mt-3 text-center ml-3 pt-4 pb-3 mb-5">
+      <div class="mt-5 pl-2">
+        <h1>Top Selections</h1>
+        <button class="btn btn-primary mt-2">View All</button>
+      </div>
+
+      <div class="mr-5">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\dell-mouse-img.avif"
+          class="final-mouse-img"
+        />
+        <br />
+        <p class="mt-1">Wireless mouse</p>
+        <a class="top-selection-anchor" href="">Popular</a>
+      </div>
+
+      <div class="mr-5">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\mobile-top-pics.jpg"
+          class="final-mouse-img"
+        />
+        <br />
+        <p class="mt-1">Mobiles</p>
+        <a class="top-selection-anchor" href="">Top Picks</a>
+      </div>
+
+      <div class="mr-5">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\key-board-img.jpg"
+          class="final-mouse-img"
+        />
+        <br />
+        <p class="mt-1">Keyboards</p>
+        <a class="top-selection-anchor" href="">Hand Picked</a>
+      </div>
+
+      <div class="mr-5">
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\smart-watch-img-top.webp"
+          class="final-mouse-img"
+        />
+        <br />
+        <p class="mt-1">Smart Watch</p>
+        <a class="top-selection-anchor" href="">In Focus Now</a>
+      </div>
+
+      <div>
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\wall-clock-img.webp"
+          class="final-mouse-img"
+        />
+        <br />
+        <p class="mt-1">Clocks</p>
+        <a class="top-selection-anchor" href="">Popular</a>
+      </div>
+
+      <div>
+        <img
+          src="D:\Mentor Projects\E_Commerce_static\ssd-img.jpg"
+          class="final-mouse-img"
+        />
+        <br />
+        <p class="mt-1">SSD</p>
+        <a class="top-selection-anchor" href="">Popular</a>
+      </div>
+    </div>
+    <div></div>
+
+    <div class="pl-3">
+      <p class="flipkard-details-headings">
+        Flipkart: The One-stop Shopping Destination
+      </p>
+      <p class="flipkart-details-para">
+        E-commerce is revolutionizing the way we all shop in India. Why do you
+        want to hop from one store to another in search of the latest phone when
+        you can find it on the Internet in a single click? Not only mobiles.
+        Flipkart houses everything you can possibly imagine, from trending
+        electronics like laptops, tablets, smartphones, and mobile accessories
+        to in-vogue fashion staples like shoes, clothing and lifestyle
+        accessories; from modern furniture like sofa sets, dining tables, and
+        wardrobes to appliances that make your life easy like washing machines,
+        TVs, ACs, mixer grinder juicers and other time-saving kitchen and small
+        appliances; from home furnishings like cushion covers, mattresses and
+        bedsheets to toys and musical instruments, we got them all covered. You
+        name it, and you can stay assured about finding them all here. For those
+        of you with erratic working hours, Flipkart is your best bet. Shop in
+        your PJs, at night or in the wee hours of the morning. This e-commerce
+        never shuts down.
+        <br />
+        <br />
+        What's more, with our year-round shopping festivals and events, our
+        prices are irresistible. We're sure you'll find yourself picking up more
+        than what you had in mind. If you are wondering why you should shop from
+        Flipkart when there are multiple options available to you, well, the
+        below will answer your question.
+      </p>
+      <p class="flipkard-details-headings">Flipkart Plus</p>
+      <p class="flipkart-details-para">
+        A world of limitless possibilities awaits you - Flipkart Plus was
+        kickstarted as a loyalty reward programme for all its regular customers
+        at zero subscription fee. All you need is 500 supercoins to be a part of
+        this service. For every 100 rupees spent on Flipkart order, Plus members
+        earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery,
+        early access during sales and shopping festivals, exchange offers and
+        priority customer service are the top benefits to a Flipkart Plus
+        member. In short, earn more when you shop more.
+        <br />
+        What's more, you can even use the Flipkart supercoins for a number of
+        exciting services, like:
+        <br />An annual Zomato Gold membership <br />An annual Hotstar Premium
+        membership <br />6 months Gaana plus subscription <br />Rupees 550
+        instant discount on flights on ixigo <br />Check out
+        https://www.flipkart.com/plus/all-offers for the entire list. Terms and
+        conditions apply.
+      </p>
+      <p class="flipkard-details-headings">No Cost EMI</p>
+      <p class="flipkart-details-para">
+        In an attempt to make high-end products accessible to all, our No Cost
+        EMI plan enables you to shop with us under EMI, without shelling out any
+        processing fee. Applicable on select mobiles, laptops, large and small
+        appliances, furniture, electronics and watches, you can now shop without
+        burning a hole in your pocket. If you've been eyeing a product for a
+        long time, chances are it may be up for a no cost EMI. Take a look ASAP!
+        Terms and conditions apply.
+      </p>
+      <p class="flipkard-details-headings">EMI on Debit Cards</p>
+      <p class="flipkart-details-para">
+        Did you know debit card holders account for 79.38 crore in the country,
+        while there are only 3.14 crore credit card holders? After enabling EMI
+        on Credit Cards, in another attempt to make online shopping accessible
+        to everyone, Flipkart introduces EMI on Debit Cards, empowering you to
+        shop confidently with us without having to worry about pauses in monthly
+        cash flow. At present, we have partnered with Axis Bank, HDFC Bank,
+        State Bank of India and ICICI Bank for this facility. More power to all
+        our shoppers! Terms and conditions apply.
+      </p>
+
+      <p class="flipkard-details-headings">Mobile Exchange Offers</p>
+      <p class="flipkart-details-para">
+        Get an instant discount on the phone that you have been eyeing on.
+        Exchange your old mobile for a new one after the Flipkart experts
+        calculate the value of your old phone, provided it is in a working
+        condition without damage to the screen. If a phone is applicable for an
+        exchange offer, you will see the 'Buy with Exchange' option on the
+        product description of the phone. So, be smart, always opt for an
+        exchange wherever possible. Terms and conditions apply.
+      </p>
+      <p class="flipkard-details-headings">
+        Electronic Devices and Accessories
+      </p>
+      <p class="flipkart-details-para">
+        When it comes to laptops, we are not far behind. Filter among dozens of
+        super-fast operating systems, hard disk capacity, RAM, lifestyle, screen
+        size and many other criterias for personalized results in a flash. All
+        you students out there, confused about what laptop to get? Our Back To
+        College Store segregates laptops purpose wise (gaming, browsing and
+        research, project work, entertainment, design, multitasking) with
+        recommendations from top brands and industry experts, facilitating a
+        shopping experience that is quicker and simpler. <br />
+        Photography lovers, you couldn't land at a better page than ours.
+        Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras,
+        millennial favourite instant cameras or action cameras for adventure
+        junkies: our range of cameras is as much for beginners as it is for
+        professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big
+        names you'll find in our store. Photography lovers, you couldn't land at
+        a better page than ours. Cutting-edge DSLR cameras, ever reliable
+        point-and-shoot cameras, millennial favourite instant cameras or action
+        cameras for adventure junkies: our range of cameras is as much for
+        beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and
+        Fujifilm are some big names you'll find in our store.
+        <br />
+        Turn your home into a theatre with a stunning surround sound system.
+        Choose from our elaborate range of Sony home theatres, JBL soundbars and
+        Philips tower speakers for an experience to remember.
+        <br />
+        How about jazzing up your phone with our quirky designer cases and
+        covers? Our wide-ranging mobile accessories starting from headphones,
+        power banks, memory cards, mobile chargers, to selfie sticks can prove
+        to be ideal travel companions for you and your phone; never again worry
+        about running out of charge or memory on your next vacation.
+      </p>
+    </div>
+
+
+    <div class="last-part d-flex flex-row justify-content-center pt-5 pl-5 pb-5">
+      <div class="mr-5">
+        <p class="like-about-heading">ABOUT</p>
+        <a class="contact-us-details" href="">Contact Us</a>
+        <br>
+        <a class="contact-us-details" href="">About Us</a>
+        <br>
+        <a class="contact-us-details" href="">Careers</a>
+        <br>
+        <a class="contact-us-details" href="">Flipkart Stories</a>
+        <br>
+        <a class="contact-us-details" href="">Press</a>
+        <br>
+        <a class="contact-us-details" href="">Flipkart Wholesale</a>
+        <br>
+        <a class="contact-us-details" href="">Corporate Information</a>
+      </div>
+
+      <div class="mr-5">
+        <p class="like-about-heading">HELP</p>
+        <a class="contact-us-details href="">Payments</a>
+        <br>
+        <a class="contact-us-details href="">Shipping</a>
+        <br>
+        <a class="contact-us-details href="">Cancellation & Returns</a>
+        <br>
+        <a class="contact-us-details href="">FAQ</a>
+        <br>
+        <a class="contact-us-details href="">Report Infregement</a>
+
+      </div>
+
+      <div class="mr-5">
+        <p class="like-about-heading">Policy</p>
+        <a class="contact-us-details">Return Policy</a>
+        <br>
+        <a class="contact-us-details" href="">Terms of Use</a>
+        <br>
+        <a class="contact-us-details" href="">Security</a>
+        <br>
+        <a class="contact-us-details" href="">Privacy</a>
+        <br>
+        <a class="contact-us-details" href="">Site Map</a>
+        <br>
+        <a class="contact-us-details" href="">EPR Compliance</a>
+      </div>
+
+      <div class="mr-5">
+        <p class="like-about-heading">Social</p>
+        <a class="contact-us-details" href="">Facebook</a>
+        <br>
+        <a class="contact-us-details" href="">Twitter</a>
+        <br>
+        <a class="contact-us-details" href="">Youtube</a>
+      </div>
+
+        <div class="border-prop"></div>
+
+      <div class="mr-5">
+        <p class="like-about-heading">Mail Us</p>
+        <div class="mail-us-heading-spacing">
+          <p> Flipkart Internet Private Limited,</p>
+          <p> Building Alyssa,Begonia &</p>
+          <p> Clove Embassy Tech Village,</p>
+          <p> Outer Ring Road, Devarabeesanahalli Village</p>
+          <p> Bengaluru, 560103,</p>
+          <p> Karnataka, India</p>
+        </div>
+      </div>
+
+      
+      <div class="mr-5">
+        <p class="like-about-heading">Registered Office Address</p>
+        <div class="mail-us-heading-spacing">
+          <p> Flipkart Internet Private Limited,</p>
+          <p> Building Alyssa,Begonia &</p>
+          <p> Clove Embassy Tech Village,</p>
+          <p> Outer Ring Road, Devarabeesanahalli Village</p>
+          <p> Bengaluru, 560103,</p>
+          <p> Karnataka, India</p>
+          <p>CIN:U5110KA2012PTC066150</p>
+          <p>Telephone:  <span class="span-heading">044-45614700</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
